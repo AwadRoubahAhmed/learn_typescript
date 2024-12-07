@@ -53,3 +53,17 @@ class Person {
 
 const newPerson = new Person("Jane Smith", 24);
 console.log(newPerson.greet());
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+type PropsCheck = {
+  isLoggedIn: boolean;
+};
+
+const isLoggedIn: boolean = true;
+const renderLoggedIn = (isLoggedIn: PropsCheck): string => {
+  if (isLoggedIn) {
+    return "Bienvenu, utilisateur !";
+  } else {
+    return "Désolé vous n'etes pas connecter !";
+  }
+};

@@ -35,3 +35,16 @@ var Person = /** @class */ (function () {
 }());
 var newPerson = new Person("Jane Smith", 24);
 console.log(newPerson.greet());
+
+
+
+
+var isLoggedIn = true;
+var renderLoggedIn = function (isLoggedIn) {
+    if (isLoggedIn) {
+        return "Bienvenu, utilisateur !";
+    }
+    else {
+        return "Désolé vous n'etes pas connecter !";
+    }
+};
