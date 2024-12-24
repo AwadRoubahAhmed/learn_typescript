@@ -67,3 +67,11 @@ const renderLoggedIn = (isLoggedIn: PropsCheck): string => {
     return "Désolé vous n'etes pas connecter !";
   }
 };
+////////////////////////////////////////////////////////////////////////////////////////////////
+// Types Generics;
+
+function getType<T>(arr: T[], item: T): boolean {
+  return arr.includes(item);
+}
+
+console.log(getType([1, 3, 5, 6, 7], 4));

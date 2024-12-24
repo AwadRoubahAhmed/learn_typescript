@@ -35,10 +35,6 @@ var Person = /** @class */ (function () {
 }());
 var newPerson = new Person("Jane Smith", 24);
 console.log(newPerson.greet());
-
-
-
-
 var isLoggedIn = true;
 var renderLoggedIn = function (isLoggedIn) {
     if (isLoggedIn) {
@@ -48,3 +44,9 @@ var renderLoggedIn = function (isLoggedIn) {
         return "Désolé vous n'etes pas connecter !";
     }
 };
+////////////////////////////////////////////////////////////////////////////////////////////////
+// Types Generics;
+function getType(arr, item) {
+    return arr.includes(item);
+}
+console.log(getType([1, 3, 5, 6, 7], 4));
